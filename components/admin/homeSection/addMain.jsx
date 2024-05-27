@@ -23,28 +23,33 @@ const  HomeSectionMain = ({data}) => {
     console.log("values-->", values);
     console.log("file", file);
 
-    if (!file && !initialValues?.image) {
-      message.error("Please select image");
-      return; // stoppppp progress the function
-    } else {
+    // if (!file && !initialValues?.image) {
+    //   message.error("Please select image");
+    //   return; // stoppppp progress the function
+    // } 
+
+
+    // else {
     //  values.image = await uploadImages(file, true, "homesection"); // result is image link from firebase/storage
 
     // if(initialValues && initialValues?.image){
     // await deleteImage(initialValues?.image);
     // }
 
-    if(file && initialValues?.image){
-        await deleteImage(initialValues?.image);
-        message.success("image deleted");
-        values.image = await uploadImages(file, true, "homesection");
+    // if(file && initialValues?.image){
+    //     await deleteImage(initialValues?.image);
+    //     message.success("image deleted");
+    //     values.image = await uploadImages(file, true, "homesection");
 
-    }
+    // }
 
-    if(file && !initialValues?.image){
-        values.image = await uploadImages(file, true, "homesection");
-        message.success("image Uploaded Sucessfully");
+    // if(file && !initialValues?.image){
+    //     values.image = await uploadImages(file, true, "homesection");
+    //     message.success("image Uploaded Sucessfully");
 
-    }
+    // }
+
+
 
 console.log("VALUE>>>>>>>>>>>>>>>" , values)
 
@@ -61,7 +66,7 @@ console.log("VALUE>>>>>>>>>>>>>>>" , values)
 
 
       message.success("Section added successfully");
-    }
+    // }
   };
 
   return (

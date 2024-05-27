@@ -38,23 +38,7 @@ const ProductTable = ({ products }) => {
 
 
     },
-    {
-      title: "Category",
-      // same name from database   // category={title ,....}
-      dataIndex: "category",
-    },
 
-    
-    {
-      title: "Is Offer",
-      // same name from database   // category={title ,....}
-      render: (record) => {
-        return (
-          <div>
-          {record.isoffer ? <h1 className=" text-green-500"> True</h1> : <h1 className=" text-red-500"> False</h1> }
-          </div>
-          )
-    }},
 
 
     {

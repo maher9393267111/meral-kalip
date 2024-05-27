@@ -72,18 +72,19 @@ const ProductForm = ({
             title: initialValues?.title || "",
             titlear: initialValues?.title || "",
             titletr: initialValues?.title || "",
-            category: initialValues?.category || "",
-            subcategory: initialValues?.subcategory || "",
-            price: initialValues?.price || 0,
-            desc: initialValues?.desc || "",
-            descar: initialValues?.descar || "",
-            desctr: initialValues?.desctr || "",
-            instock: initialValues?.instock || true,
             images: initialValues?.images || [],
-            video: initialValues?.video || "",
-            isoffer: initialValues?.isoffer || false,
-            discount: initialValues?.discount || 0,
-            offerdesc: initialValues?.offerdesc || "",
+            // category: initialValues?.category || "",
+            // subcategory: initialValues?.subcategory || "",
+            // price: initialValues?.price || 0,
+            // desc: initialValues?.desc || "",
+            // descar: initialValues?.descar || "",
+            // desctr: initialValues?.desctr || "",
+            // instock: initialValues?.instock || true,
+            
+            // video: initialValues?.video || "",
+            // isoffer: initialValues?.isoffer || false,
+            // discount: initialValues?.discount || 0,
+            // offerdesc: initialValues?.offerdesc || "",
           }}
         >
           <div className=" grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -115,118 +116,8 @@ const ProductForm = ({
             </Form.Item>
           </div>
 
-          <Form.Item      rules={[
-              {
-                required: true,
-                message: "Please input your desc",
-              },
-            ]} name="desc" label="English Description">
-            <TextArea rows={4} />
-          </Form.Item>
 
-          <Form.Item      rules={[
-              {
-                required: true,
-                message: "Please input your arabic desc",
-              },
-            ]} name="descar" label="Arabic Description">
-            <TextArea rows={4} />
-          </Form.Item>
 
-          <Form.Item      rules={[
-              {
-                required: true,
-                message: "Please input your turkish desc",
-              },
-            ]} name="desctr" label="Turkish Description">
-            <TextArea rows={4} />
-          </Form.Item>
-
-          <div className=" grid gap-3 md:grid-cols-3 lg:grid-cols-4 grid-cols-1">
-            {/* -----category--- */}
-            <Form.Item      rules={[
-              {
-                required: true,
-                message: "Please input category",
-              },
-            ]} name="category" label="category">
-              <Select  onChange={handleCategoryChange} placeholder="Select Category">
-                {cats?.map((category) => {
-                  return (
-                    <Select.Option key={category?.id} value={category?.title}>
-                      {category?.title}
-                    </Select.Option>
-                  );
-                })}
-              </Select>
-            </Form.Item>
-
-            {/* -----subcategory--- */}
-
-            {/* <Form.Item name="subcategory" label="subcategory">
-              <Select placeholder="Select SubCategory">
-                {subcats?.filter(
-    (subcategory) => subcategory.category === selectedCategory
-  ).map((subcat) => {
-                  return (
-                    <Select.Option key={subcat?.id} value={subcat?.title}>
-                      {subcat?.title}
-                    </Select.Option>
-                  );
-                })}
-              </Select>
-            </Form.Item> */}
-
-            
-
-            <div className=" flex  md:col-span-2 gap-2 items-center justify-center md:justify-start">
-              {/* ----Price--- */}
-
-              <Form.Item name="price" label="Price">
-                <InputNumber min={0} />
-              </Form.Item>
-
-              {/* ----InStock----- */}
-
-              <Form.Item name="instock" label="InStock">
-                <Switch
-                  // checked="true"
-                  defaultChecked
-                  className=" bg-red-400 "
-                />
-              </Form.Item>
-
-              {/* ----isoffer----- */}
-
-              <Form.Item name="isoffer" label="IsOffer">
-                <Switch
-                  checked={offerToggle}
-                  // defaultChecked
-                  className=" bg-red-400 "
-                  onChange={onChange}
-                />
-              </Form.Item>
-            </div>
-          </div>
-          {offerToggle ? (
-            <div className="flex-col flex md:flex-row md:gap-12 ">
-              {/* ----offerDesciption--- */}
-
-              <Form.Item
-                className="md:w-[70%]"
-                name="offerdesc"
-                label="OfferDesc"
-              >
-                <TextArea rows={2} />
-              </Form.Item>
-
-              {/* ----Discount--- */}
-
-              <Form.Item name="discount" label="Discount">
-                <InputNumber min={0} />
-              </Form.Item>
-            </div>
-          ) : null}
 
 
 

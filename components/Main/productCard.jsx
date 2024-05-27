@@ -32,7 +32,7 @@ const titlelng  = router.locale === 'ar' ? titlear : router.locale === 'en' ? ti
           <div className="flex items-center justify-between">
 
        
-
+{/* 
             {isoffer === true ?
 
           <div className="space-x-2 !w-full text-center">
@@ -55,7 +55,7 @@ const titlelng  = router.locale === 'ar' ? titlear : router.locale === 'en' ? ti
           TL {price}
         </span>
         </div> 
-}
+} */}
 
 
 

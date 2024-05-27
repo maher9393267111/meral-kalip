@@ -4,7 +4,7 @@ import React from "react";
 
 function Hero({data ,direction ,lang}) {
   return (
-    <div>
+    <div >
       <main className="grid grid-cols-1 items-center gap-y-4 py-8 lg:grid-cols-2 lg:py-0">
         <div   className="md:text-center lg:text-left">
           <h1 dir={direction}  className="flex justify-center flex-col text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
@@ -58,7 +58,7 @@ function Hero({data ,direction ,lang}) {
             layout="responsive"
           /> */}
 
-<iframe className="!w-full" autoplay src="https://drive.google.com/file/d/1--nrfOgm1J_pv9tkbb1bfYTQBghjVTro/preview" width="480" height="280" allow="autoplay"></iframe>
+<iframe className="!w-full h-[400px]" autoplay src="https://drive.google.com/file/d/1--nrfOgm1J_pv9tkbb1bfYTQBghjVTro/preview" allow="autoplay"></iframe>
 
 
   {/* <video width={900} height={600} src={'/main.mp4'} autoPlay muted></video> */}

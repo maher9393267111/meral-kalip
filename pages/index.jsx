@@ -135,6 +135,7 @@ export default function Index({}) {
         )} */}
 
         <div dir="ltr">
+
           <Hero lang={lang} data={homesection} direction={direction} />
         </div>
 

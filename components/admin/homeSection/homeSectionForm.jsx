@@ -73,7 +73,7 @@ const HomeSectionForm = ({
 
           {/* -----images upload----- */}
 
-          <div>
+          {/* <div>
             <Upload
               accept="image/*"
               maxCount={1}
@@ -88,7 +88,7 @@ const HomeSectionForm = ({
             >
               Upload Image
             </Upload>
-          </div>
+          </div> */}
 
           {/* -----show category image {update category} ---- */}
 
