@@ -102,7 +102,7 @@ const router =useRouter()
       />
       <div className="mx-auto arabic max-w-7xl px-6 py-8  sm:px-6 md:py-16 lg:px-8">
         <section dir={router?.locale === 'ar' && 'rtl'}>
-          <h1 className="text-4xl mr-6 arabic font-bold tracking-tight shimmer sm:text-5xl md:text-6xl">
+          <h1 className="text-4xl mr-6 arabic shimmer font-bold tracking-tight shimmer sm:text-5xl md:text-6xl">
           {t("contactus")}
           </h1>
           <p className="my-4 text-lg mr-6 duration-200 hover:shimmer md:justify-start">
@@ -111,8 +111,8 @@ const router =useRouter()
               rel="noopener noreferrer"
               href="https://maps.app.goo.gl/aVHAza3KnaQqYdfy6"
             >
-              <strong>{t("address")}:</strong> 
-              Zafer, Küplüpınar Cd. No:36, 16580 Gürsu/Bursa
+              <strong className="shimmer pl-2">{t("address")}:</strong> 
+              Maltepe Mah Gümüşsuyu Cd HACALOĞLU SANAYI SITESI NO.15 KAT.2 NO(80)odin center karşışı Istanbul avrupa yakası ZEYTINBURNU
             </a>
           </p>
         </section>
@@ -120,7 +120,7 @@ const router =useRouter()
         <div className="md:grid grid-cols-1 gap-5 py-4 md:grid-cols-2 md:py-8 flex  flex-col-reverse">
           <section className="h-64 md:h-full">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3046.6296704256233!2d29.1886!3d40.2173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca386320f20265%3A0xa33cb1ab2d594274!2sZirve%20Z%C3%BCccaciye!5e0!3m2!1sar!2str!4v1715365255547!5m2!1sar!2str"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6020.084645574187!2d28.909615!3d41.02433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb90e94b5561%3A0xc82301b144c98a32!2sKafe%20Masa%20Sandalye!5e0!3m2!1sen!2str!4v1716886802734!5m2!1sen!2st"
               width="100%"
               height="100%"
               style={{ border: 0 }}

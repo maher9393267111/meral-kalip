@@ -6,41 +6,45 @@ import {
   FaLinkedinIn,
   FaTiktok
 } from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
 
 const SocialButtons = () => {
   const socials = [
 
-    // {
-    //   name: 'Facebook',
-    //   icon: <FaFacebookF />,
-    //   link: 'https://www.facebook.com/profile.php?id=100083511842889&mibextid=ZbWKwL',
-    // },
+
     {
       name: 'Whatsapp',
       icon: <FaWhatsapp />,
-      link: 'https://wtspee.com/905522982310',
-    },
-    {
-      name: 'Whatsapp2',
-      icon: <FaWhatsapp />,
-      link: 'https://wtspee.com/905395894257',
-    },
-    {
-      name: 'Facebook',
-      icon: <FaFacebookF />,
-      link: 'https://www.facebook.com/nabhan.salo?mibextid=ZbWKwL',
+      link: 'https://wtspee.com/905388500388',
     },
 
     {
-      name: 'Instagram',
-      icon: <FaInstagram />,
-      link: 'https://www.instagram.com/nabhanyaser8?igsh=MXNtbDJ2cW1kMXc1cQ==',
+      name: 'Facebook',
+      icon: <FaFacebookF />,
+      link: 'https://www.facebook.com/profile.php?id=100067204745978&mibextid=ZbWKwL',
     },
+
     {
-      name: 'Tiktok',
-      icon: <FaTiktok />,
-      link: 'https://www.tiktok.com/@yasernbhan1?_t=8mEokZZgEz8&_r=1',
+      name: 'email',
+      icon: <MdEmail />,
+      link: 'mailto:Meralkalip@gmail.com',
     },
+
+    
+
+
+    // {
+    //   name: 'Instagram',
+    //   icon: <FaInstagram />,
+    //   link: 'https://www.instagram.com/nabhanyaser8?igsh=MXNtbDJ2cW1kMXc1cQ==',
+    // },
+
+
+    // {
+    //   name: 'Tiktok',
+    //   icon: <FaTiktok />,
+    //   link: 'https://www.tiktok.com/@yasernbhan1?_t=8mEokZZgEz8&_r=1',
+    // },
   ];
 
   return (

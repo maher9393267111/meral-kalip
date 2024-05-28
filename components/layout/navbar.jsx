@@ -12,8 +12,10 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaSnapchat,
-  FaTiktok
+  FaTiktok,
+  FaVoicemail
 } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { AiOutlineGlobal } from "react-icons/ai"
 import { useAuth } from "@/functions/context";
 import { getDocumentsOrder } from "@/functions/firebase/getData";
@@ -149,18 +151,26 @@ const Navbar = () => {
           <div className="flex flex-row space-x-2">
             <FaMapMarkerAlt className="w-5 h-5 text-gray-500" />
             <p className="arabic"> 
-            Zafer, Küplüpınar Cd. No:36, 16580 Gürsu/Bursa
+            Maltepe Mah Gümüşsuyu Cd HACALOĞLU SANAYI SITESI
                </p>
           </div>
           <div className="flex flex-row space-x-2">
             <FaMobileAlt className="w-5 h-5 text-gray-500" />
-            <p>00905522982310</p>
+            <p>+095387752388</p>
           </div>
 
           <div className="flex flex-row space-x-2">
-            <FaMobileAlt className="w-5 h-5 text-gray-500" />
-            <p>00905395894257</p>
+            <MdEmail className="w-5 h-5 text-gray-500" />
+            <p>
+              {/* info@meralkalip.com */}
+              <a target="_blank" href="mailto:Meralkalip@gmail.com">
+              Meralkalip@gmail.com
+              </a>
+            </p>
           </div>
+
+          {/*  */}
+       
 
           <div className="flex flex-row space-x-2">
             <FaRegClock className="w-5 h-5 arabic text-gray-500" />
@@ -204,20 +214,20 @@ const Navbar = () => {
       <nav
       ref={navbarRef}
         dir=""
-        className="   bg-black bg-yelow-100 px-3 arabic py-5 bg-opacity-80 md:bg-opacity-80 sticky top-0 z-50   text-black md:bg-primar font-primary mx-0 mt-0  bg-no-repeat bg-top md:bg-cover md:bg-top"
+        className="  shadow-2xl  bg-blac bg-yelow-100 px-3 arabic py-5 bg-opacity-80 md:bg-opacity-80 sticky top-0 z-50   text-black md:bg-primar font-primary mx-0 mt-0  bg-no-repeat bg-top md:bg-cover md:bg-top"
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
 
 <div className="flex gap-3 items-center">
 
 
-          <Link className="flex flex-row shimmer !shadow-2xl" href="/">
-            <Image
-            className=" object-cover    rounded-md"
-            src={'/logo.jpg'}
+          <Link className="flex flex-row shimmer !shado-2xl" href="/">
+            <img
+            className=" object-cover h-[70px] w-[190px]  md:h-[90px] md:w-[230px]   rounded-md"
+            src={'/logo.png'}
             // src="https://ik.imagekit.io/m1akscp5q/logo%20bac%20horizontal%20hitam%201.png?updatedAt=1705581337965"
-              width={52}
-              height={52}
+              width={70}
+              height={70}
               alt="logo bac"
             />
 
@@ -274,18 +284,18 @@ TEDILI MERMER
             }`}
             id="navbar-dropdown"
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent bg-black ">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent bg-blac ">
               <li onClick={toggleClose}>
                 <Link
                   href="/"
-                  className="block md:hover:text-secondary py-2 px-3 hover:bg-gay-100 !text-primary rounded hover:md:bg-transparent md:text-black md:p-0   "
+                  className="block md:hover:text-secondary py-2 px-3 hover:bg-gay-100 !text-black rounded hover:md:bg-transparent md:text-black md:p-0   "
                 >
                   {t("navbar.home")}
                 </Link>
               </li>
               <li className="relative">
                 <button
-                  className="flex  items-center justify-between w-full py-2 px-3 !text-primary rounded md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto  "
+                  className="flex  items-center justify-between w-full py-2 px-3 !text-black rounded md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto  "
                   onClick={toggleDropdown}
                 >
                   <Link
@@ -347,7 +357,7 @@ TEDILI MERMER
                 <Link
                   onClick={closeAllMenus}
                   href="/about"
-                  className="block py-2 px-3 !text-primary rounded  md:hover:bg-transparent md:hover:text-secondary md:p-0    "
+                  className="block py-2 px-3 !text-black rounded  md:hover:bg-transparent md:hover:text-secondary md:p-0    "
                 >
                   {t("navbar.about")}
                 </Link>
@@ -366,7 +376,7 @@ TEDILI MERMER
                 <Link
                   onClick={closeAllMenus}
                   href="/contact"
-                  className="block py-2 px-3 !text-primary rounded  md:hover:bg-transparent md:hover:text-secondary md:p-0  "
+                  className="block py-2 px-3 !text-black rounded  md:hover:bg-transparent md:hover:text-secondary md:p-0  "
                 >
                   {t("navbar.contact")}
                 </Link>
@@ -377,7 +387,7 @@ TEDILI MERMER
                   <Link
                     onClick={closeAllMenus}
                     href="/admin/product/all"
-                    className="block py-2 px-3 !text-primary rounded  md:hover:bg-transparent md:hover:text-secondary md:p-0    "
+                    className="block py-2 px-3 !text-black rounded  md:hover:bg-transparent md:hover:text-secondary md:p-0    "
                   >
                     {t("navbar.dash")}
                   </Link>
@@ -453,8 +463,8 @@ TEDILI MERMER
         className="inline-flex text-xl items-center gap-1"
         onClick={changeLanguage}
       >
-        <AiOutlineGlobal className="text-2xl text-primary" />
-        <span className="uppercase text-primary">{locale}</span>
+        <AiOutlineGlobal className="text-2xl text-black" />
+        <span className="uppercase text-black">{locale}</span>
       </button>
 
 
