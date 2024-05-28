@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ReactPlayer from 'react-player/lazy'
 
 function Hero({data ,direction ,lang}) {
   return (
@@ -66,6 +67,19 @@ function Hero({data ,direction ,lang}) {
 
         </div>
       </main>
+
+
+
+{/* --------Video--- */}
+
+<div className="w-full video-container mt-12 ">
+
+<ReactPlayer className='!w-full ' controls volume={0.4} url='/makine.mp4' />
+ {/* <video className="w-full h-[600px]"  src={'/makine.mp4'} autoPlay muted></video> */}
+
+</div>
+
+
     </div>
   );
 }
