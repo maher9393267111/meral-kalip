@@ -3,14 +3,14 @@ import Link from "next/link";
 import { calculateDiscountedPrice } from "@/functions/firebase/getData";
 import { useRouter } from "next/router";
 
-export default function ProductCard({ title, images ,image ,id,imageAlt ,price ,isoffer ,discount ,titlear ,titletr  }) {
+export default function ProductCard({ title, images ,image ,id,imageAlt ,price ,isoffer ,discount ,titlear ,titletr ,type="products"  }) {
 const router =useRouter()
 
 const titlelng  = router.locale === 'ar' ? titlear : router.locale === 'en' ? title : titletr
 
 
   return (
-    <Link href={`/products/single?id=${id}`}>
+    <Link href={`/${type}/single?id=${id}`}>
       <div className="group relative cursor-pointer rounded-lg transition-transform duration-700 hover:scale-105 hover:shadow-lg">
         <div className="aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8 w-full overflow-hidden rounded-lg bg-gray-200 ">
           <Image

@@ -30,7 +30,7 @@ const NFT = ({}) => {
       // setLoading(true);
       setPageLoading(true);
       //setProduct({});
-      const data = await getDocument("products", id);
+      const data = await getDocument("makines", id);
       console.log(data, "fetch categories ====>>> 🎭🎭🎭>", data);
       setProduct(data);
       setPageLoading(false);

@@ -1,4 +1,4 @@
-import { useState ,useRef } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
@@ -13,10 +13,10 @@ import {
   FaWhatsapp,
   FaSnapchat,
   FaTiktok,
-  FaVoicemail
+  FaVoicemail,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { AiOutlineGlobal } from "react-icons/ai"
+import { AiOutlineGlobal } from "react-icons/ai";
 import { useAuth } from "@/functions/context";
 import { getDocumentsOrder } from "@/functions/firebase/getData";
 import { orderBy } from "firebase/firestore";
@@ -57,25 +57,19 @@ const Navbar = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
-  
-
-
-
-
 
   const { pageLoading, setPageLoading } = useAuth();
 
   const { t } = useTranslation();
-  
-  const { locale, asPath ,pathname ,locales } = useRouter();
-  const router =useRouter()
+
+  const { locale, asPath, pathname, locales } = useRouter();
+  const router = useRouter();
 
   const [cats, setCats] = useState([]);
   const [subcats, setsubCats] = useState([]);
@@ -127,20 +121,13 @@ const Navbar = () => {
 
   console.log("DAS>>>", combinedData);
 
-
   const changeLanguage = () => {
     const currentIndex = (locales || []).indexOf(locale || "");
     const nextIndex = (currentIndex + 1) % (locales || []).length;
     const nextLocale = (locales || [])[nextIndex];
 
     router.push(pathname, asPath, { locale: nextLocale });
-  }; 
-
-
-
-
-
-
+  };
 
   return (
     <div>
@@ -150,9 +137,9 @@ const Navbar = () => {
         <div className="lg:flex lg:flex-row flex flex-col justify-center items-baseline md:items-center space-x-12 lg:space-y-0 space-y-2">
           <div className="flex flex-row space-x-2">
             <FaMapMarkerAlt className="w-5 h-5 text-gray-500" />
-            <p className="arabic"> 
-            Maltepe Mah Gümüşsuyu Cd HACALOĞLU SANAYI SITESI
-               </p>
+            <p className="arabic">
+              Maltepe Mah Gümüşsuyu Cd HACALOĞLU SANAYI SITESI
+            </p>
           </div>
           <div className="flex flex-row space-x-2">
             <FaMobileAlt className="w-5 h-5 text-gray-500" />
@@ -164,18 +151,16 @@ const Navbar = () => {
             <p>
               {/* info@meralkalip.com */}
               <a target="_blank" href="mailto:Meralkalip@gmail.com">
-              Meralkalip@gmail.com
+                Meralkalip@gmail.com
               </a>
             </p>
           </div>
 
           {/*  */}
-       
 
           <div className="flex flex-row space-x-2">
             <FaRegClock className="w-5 h-5 arabic text-gray-500" />
-            <p className="arabic"> Pazartesi-Cumartesi
-             08:00 - 6:00</p>
+            <p className="arabic"> Pazartesi-Cumartesi 08:00 - 6:00</p>
           </div>
         </div>
         <div className="flex flex-row space-x-4  justify-center items-center ">
@@ -185,7 +170,7 @@ const Navbar = () => {
           >
             <FaFacebook className="w-6 h-6 text-gray-500" />
           </a> */}
-{/* 
+          {/* 
           <a href="https://www.instagram.com/tedili.mermer?igsh=MWJ4cnQzMzBlbjJqag%3D%3D" target="_blank">
             <FaInstagram className="w-6 h-6 text-gray-500" />
 
@@ -195,8 +180,6 @@ const Navbar = () => {
           <a href="https://wtspee.com/905379732131" target="_blank">
             <FaWhatsapp className="w-6 h-6 text-gray-500" />
           </a> */}
-
-    
 
           {/* 
 <a href="https://www.snapchat.com/add/saluosh6?share_id=rgFIQU-SU4k&locale=ar-EG" target="_blank">
@@ -212,47 +195,33 @@ const Navbar = () => {
       {/* --end header */}
 
       <nav
-      ref={navbarRef}
+        ref={navbarRef}
         dir=""
         className="  shadow-2xl  bg-blac bg-yelow-100 px-3 arabic py-5 bg-opacity-80 md:bg-opacity-80 sticky top-0 z-50   text-black md:bg-primar font-primary mx-0 mt-0  bg-no-repeat bg-top md:bg-cover md:bg-top"
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+          <div className="flex gap-3 items-center">
+            <Link className="flex flex-row shimmer !shado-2xl" href="/">
+              <img
+                className=" object-cover h-[70px] w-[190px]  md:h-[90px] md:w-[230px]   rounded-md"
+                src={"/logo.png"}
+                // src="https://ik.imagekit.io/m1akscp5q/logo%20bac%20horizontal%20hitam%201.png?updatedAt=1705581337965"
+                width={70}
+                height={70}
+                alt="logo bac"
+              />
+            </Link>
 
-<div className="flex gap-3 items-center">
-
-
-          <Link className="flex flex-row shimmer !shado-2xl" href="/">
-            <img
-            className=" object-cover h-[70px] w-[190px]  md:h-[90px] md:w-[230px]   rounded-md"
-            src={'/logo.png'}
-            // src="https://ik.imagekit.io/m1akscp5q/logo%20bac%20horizontal%20hitam%201.png?updatedAt=1705581337965"
-              width={70}
-              height={70}
-              alt="logo bac"
-            />
-
-       
-          </Link>
-
-
-
-          {/* <div className=" arabic shimmer text-2xl ">
+            {/* <div className=" arabic shimmer text-2xl ">
 
 NABHAN FURNITURE
 </div> */}
+          </div>
 
-
-</div>
-
-
-{/* <div className="md:hidden arabic shimmer text-3xl ">
+          {/* <div className="md:hidden arabic shimmer text-3xl ">
 
 TEDILI MERMER
 </div> */}
-
-
-
-
 
           <button
             type="button"
@@ -299,32 +268,45 @@ TEDILI MERMER
                   onClick={toggleDropdown}
                 >
                   <Link
-                    onClick={closeAllMenus}
+                    // onClick={closeAllMenus}
                     href="/products"
                     className=" hover:text-secondary"
                   >
                     {t("navbar.products")}
                   </Link>
+                </button>
+              </li>
 
-{combinedData?.length > 0 &&
-                  <svg
-                    className="w-2.5 h-2.5 ms-2.5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+              <li className="relative">
+                <button
+                  className="flex  items-center justify-between w-full py-2 px-3 !text-black rounded md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto  "
+                  onClick={toggleDropdown}
+                >
+                  <h2
+                    onClick={closeAllMenus}
+                 //   href="/makine"
+                    className=" hover:text-secondary"
                   >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-}
+                    {t("navbar.makines")}
+                  </h2>
 
-
+                  {combinedData?.length > 0 && (
+                    <svg
+                      className="w-2.5 h-2.5 ms-2.5  bg-black text-black"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  )}
                 </button>
                 {/* Dropdown menu */}
                 {isDropdownOpen && (
@@ -336,14 +318,15 @@ TEDILI MERMER
                       className="py-2 text-md text-gray-700 dark:text-gray-400"
                       aria-labelledby="dropdownLargeButton"
                     >
-                      {combinedData?.map((item, index) => {
+                      {["Eccentric", "kalip"].map((item, index) => {
                         return (
                           <li key={index} onClick={closeAllMenus}>
                             <Link
-                              href={`/products?category=${item?.title}`}
+                              href={`/makine?category=${item}`}
                               className="block arabic px-4 py-2 hover:bg-primary "
                             >
-                              {locale === 'ar' ? item?.titlear  : locale === 'en' ? item?.title    : item?.titletr}
+                              {item}
+                              {/* {locale === 'ar' ? item?.titlear  : locale === 'en' ? item?.title    : item?.titletr} */}
                             </Link>
                           </li>
                         );
@@ -455,23 +438,15 @@ TEDILI MERMER
                 </button>
               </li> */}
 
-<li>
-
-
-
-<button
-        className="inline-flex text-xl items-center gap-1"
-        onClick={changeLanguage}
-      >
-        <AiOutlineGlobal className="text-2xl text-black" />
-        <span className="uppercase text-black">{locale}</span>
-      </button>
-
-
-
-</li>
-
-
+              <li>
+                <button
+                  className="inline-flex text-xl items-center gap-1"
+                  onClick={changeLanguage}
+                >
+                  <AiOutlineGlobal className="text-2xl text-black" />
+                  <span className="uppercase text-black">{locale}</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
