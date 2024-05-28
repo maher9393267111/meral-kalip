@@ -204,14 +204,15 @@ export const uploadImages = async (
     // files here is array
     const urls = [];
     await Promise.all(
-      files.map(async (file) => {
+      files?.map(async (file) => {
         // folder and image name to save image it  --> products/121212
-        const imageRef = ref(storage, `products/${uuidv4()}`);
+        const imageRef = ref(storage, `${col}/${uuidv4()}`);
         // send image to firebase/storage
         const res = await uploadBytes(imageRef, file);
 
         // retrive image from firebase/storage
         const url = await getDownloadURL(res.ref);
+
 
         //// then add image Link to array
         urls.push(url);
@@ -219,7 +220,7 @@ export const uploadImages = async (
     );
 
     // all images link return {result of this function}
-
+console.log("IMAGES-->>" ,urls)
     return urls;
   }
 };
