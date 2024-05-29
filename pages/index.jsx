@@ -164,6 +164,13 @@ export default function Index({}) {
         " 
        
         canonical="https://www.mirimolds.com"
+        openGraph={{
+          url: "https://www.mirimolds.com",
+          title: " قوالب صب البلاستيك",
+      
+        }}
+
+
 
 
      description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. mirikalip mirimolds" 
