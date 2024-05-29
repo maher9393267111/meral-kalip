@@ -102,7 +102,7 @@ const SocialButtons = () => {
 
 {/* ----------- */}
 <div
-className=' !text-xl font-semibold mb-12 md:mb-24 grid grid-cols-2 md:grid-cols-4 gap-12'  
+className=' text-md md:!text-xl font-semibold mb-12 md:mb-24 grid grid-cols-2 md:grid-cols-4 gap-12'  
 // className="lg:flex !mb-12 lg:flex-row flex flex-col justify-center items-center items-baselin md:items-center space-x-12 lg:space-y-0 space-y-2"
 
 
