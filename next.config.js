@@ -16,6 +16,10 @@ const nextConfig = {
       ],
     },
 
+    experimental: {
+      appDir: false,
+    },
+
 
     webpack: (config, { isServer }) => {
       if (!isServer) {
