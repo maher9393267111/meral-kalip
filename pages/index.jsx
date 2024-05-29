@@ -150,10 +150,21 @@ export default function Index({}) {
     <Layout dir={router.locale === "ar" ? "rtl" : "ltr"}>
       
       <NextSeo
-        title="meralKalip | meral kalip | plastic meral kalip  |   Miri ÇELİK Kalıp |  شركة ميرال لصناعة القوالب البلاستيكية"
+        title="meralKalip | meral kalip | plastic meral kalip  |   Miri ÇELİK Kalıp |  شركة ميرال لصناعة القوالب البلاستيكية |MiriMold | mold | miri mold |  قوالب صب البلاستيك وقوالب تشكيل الحديد | قوالب تشكيل الحديد  | قوالب صب البلاستيك  | قوالب صب  
+        
+        |  لصناعة قوالب البلاستيك والمنتجات البلاستيكية في تركيا
+        | 
+        تصنيع كافة القوالب البلاستيكية الحقن +النفخ  + قوالب حقن المعادن 
+        | 
+        المنتجات البلاستيكية
+        | 
+        تصنيع قوالب البلاستيك
+        
+        " 
        
      description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" 
       />
+
 
       <div className="scroll-smooth mb-16  ">
         {/* {sliders && sliders?.length > 0 && <BannerSlider data={sliders} />}
