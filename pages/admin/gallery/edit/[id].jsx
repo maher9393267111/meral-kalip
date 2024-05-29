@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMemo } from "react";
 import  UpdateSubCategoryMain from '@/components/admin/gallery/updaGallery';
 import { getDocuments,getDocument } from '@/functions/firebase/getData';
 const EditGalleryPage = ({subcat}) => {

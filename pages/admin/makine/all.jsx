@@ -7,6 +7,7 @@ import { getDocuments , getDocumentsOrder } from "@/functions/firebase/getData";
 import { useAuth } from "@/functions/context";
 import Loader from "@/components/common/Loader";
 import { orderBy } from "@firebase/firestore";
+import { useMemo } from "react";
 const AllMakinePage = ({}) => {
   const { pageLoading, setPageLoading } = useAuth();
 

@@ -1,4 +1,5 @@
 import React ,{useState,useEffect} from 'react';
+import { useMemo } from "react";
 import UpdateProduct from '@/components/admin/makine/updateMakine';
 import { getDocuments,getDocument ,getDocumentsOrder } from '@/functions/firebase/getData';
 import { orderBy } from '@firebase/firestore';

@@ -1,6 +1,7 @@
 import React from "react";
 import { getDocuments } from "@/functions/firebase/getData";
 import AddSubCategoryMain from "@/components/admin/gallery/AddGallery";
+import { useMemo } from "react";
 const AddGalleryPage = ({ }) => {
   return (
     <div>
