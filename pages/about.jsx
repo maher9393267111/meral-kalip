@@ -38,7 +38,7 @@ function Hakkimizda() {
     <Layout>
       <>
       <NextSeo
-        title="meralKalip | meral kalip | plastic meral kalip | شركة ميرال لصناعة القوالب البلاستيكية"
+        title="meralKalip | meral kalip | plastic meral kalip |   Miri ÇELİK Kalıp |  شركة ميرال لصناعة القوالب البلاستيكية"
        
      description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" 
       />
