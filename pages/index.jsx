@@ -18,10 +18,8 @@ import Hero from "@/components/layout/Hero";
 import ProductCard from "@/components/Main/productCard";
 import { useAuth } from "@/functions/context";
 import { getMaxAge } from "next/dist/server/image-optimizer";
-// import Service from "@/components/Main/Services";
-// import SectionOne from "@/components/Main/SectionOne";
-// import Travels from "@/components/Main/Travels";
-// import AbourSection from "@/components/Main/AboutUsSection";
+ import Image from "next/image";
+import { Image as antdImage } from "antd";
 
 export default function Index({}) {
   const router = useRouter();
@@ -175,11 +173,13 @@ export default function Index({}) {
               </h1>
             </div>
 
-            <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+            <div className="grid grid-cols-1 gap-y-10 gap-x-6  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
               {makines?.map((product, index) => {
-                return <ProductCard {...product} key={product?.id} />;
+                return <ProductCard type={"makine"} {...product} key={product?.id} />;
               })}
-            </div>
+
+              </div>
+
           </div>
 
 
@@ -195,12 +195,64 @@ export default function Index({}) {
             </div>
 
             <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
-              {makines?.map((product, index) => {
-                return <ProductCard {...product} key={product?.id} />;
+              {kalips?.map((product, index) => {
+                return <ProductCard type={"makine"} {...product} key={product?.id} />;
               })}
             </div>
           </div>
 
+
+
+
+<div>
+<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-5 py-8 md:grid-cols-2 md:py-16">
+            <section className="grid gap-4 arabic">
+              <div className="mr-10">
+                <h1
+                  dir={router?.locale === "ar" && "rtl"}
+                  className="text-4xl  font-bold tracking-tight shimmer sm:text-5xl md:text-6xl"
+                >
+                  {t("navbar.about")}
+                </h1>
+
+                <div
+                  className="mt-6 text-xl"
+                  dir={router?.locale === "ar" && "rtl"}
+                >
+                  {router?.locale === "ar"
+                    ? contactinfo?.titlear
+                    : router.locale === "en"
+                    ? contactinfo?.title
+                    : contactinfo?.titletr}
+                </div>
+              </div>
+
+              {/* <article dir={router?.locale === 'ar' && 'rtl'} className="grid gap-2">
+              <p className="arabic text-[17px] sm:text-xl">
+
+
+
+
+
+              </p>
+          
+
+            </article> */}
+            </section>
+            <section className="shadow_image_left rounded-md relative order-first h-[355px] md:min-h-[355px] md:order-none md:h-full">
+              <Image
+                className="absolute rounded-md"
+                src={contactinfo?.image}
+                alt="Hakkımızda"
+                layout="fill"
+                objectFit="cover"
+                priority={true}
+              />
+            </section>
+          </div>
+        </div>
+</div>
 
 
 

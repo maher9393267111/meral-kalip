@@ -262,29 +262,34 @@ TEDILI MERMER
                   {t("navbar.home")}
                 </Link>
               </li>
-              <li className="relative">
+
+
+
+              {/* <li className="relative">
                 <button
                   className="flex  items-center justify-between w-full py-2 px-3 !text-black rounded md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto  "
                   onClick={toggleDropdown}
                 >
                   <Link
-                    // onClick={closeAllMenus}
+                  
                     href="/products"
                     className=" hover:text-secondary"
                   >
                     {t("navbar.products")}
                   </Link>
                 </button>
-              </li>
+              </li> */}
 
-              <li className="relative">
+
+
+              {/* <li className="relative">
                 <button
                   className="flex  items-center justify-between w-full py-2 px-3 !text-black rounded md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto  "
                   onClick={toggleDropdown}
                 >
                   <h2
                     onClick={closeAllMenus}
-                 //   href="/makine"
+                
                     className=" hover:text-secondary"
                   >
                     {t("navbar.makines")}
@@ -308,7 +313,7 @@ TEDILI MERMER
                     </svg>
                   )}
                 </button>
-                {/* Dropdown menu */}
+                
                 {isDropdownOpen && (
                   <div
                     id="dropdownNavbar"
@@ -326,7 +331,7 @@ TEDILI MERMER
                               className="block arabic px-4 py-2 hover:bg-primary "
                             >
                               {item}
-                              {/* {locale === 'ar' ? item?.titlear  : locale === 'en' ? item?.title    : item?.titletr} */}
+                             
                             </Link>
                           </li>
                         );
@@ -334,9 +339,12 @@ TEDILI MERMER
                     </ul>
                   </div>
                 )}
-              </li>
+              </li> */}
 
-              <li>
+
+
+
+              {/* <li>
                 <Link
                   onClick={closeAllMenus}
                   href="/about"
@@ -344,16 +352,8 @@ TEDILI MERMER
                 >
                   {t("navbar.about")}
                 </Link>
-              </li>
-              {/* <li>
-                <Link
-                  onClick={closeAllMenus}
-                  href="/gallery"
-                  className="block py-2 px-3 !text-primary rounded  md:hover:bg-transparent md:hover:text-secondary md:p-0     "
-                >
-                  {t("navbar.gallery")}
-                </Link>
               </li> */}
+         
 
               <li>
                 <Link

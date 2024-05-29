@@ -186,7 +186,7 @@ const MakineForm = ({
 
           {/* -----images upload----- */}
 
-          <div>
+          {/* <div>
             <Upload
               accept="image/*"
               multiple
@@ -210,7 +210,7 @@ const MakineForm = ({
             >
               Upload Images {files?.length}
             </Upload>
-          </div>
+          </div> */}
 
           {/* -----show product images {update product} ---- */}
 

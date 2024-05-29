@@ -386,3 +386,8 @@ body {
   height: 800px !important;
 }
 }
+
+
+.ant-image {
+  height: 100% !important;
+}
