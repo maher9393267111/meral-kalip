@@ -10,14 +10,13 @@ import { MdEmail } from "react-icons/md";
 
 
 import {
-  FaMapMarkerAlt,
+
   FaMobileAlt,
-  FaRegClock,
+ 
   FaFacebook,
-  FaInstagram,
-  FaWhatsapp,
+  
   FaSnapchat,
-  FaTiktok,
+  
   FaVoicemail,
 } from "react-icons/fa";
 
@@ -74,7 +73,7 @@ const SocialButtons = () => {
 
   return (
     <>
-     <div dir='ltr' className="fixed top-[80%] z-10 right-0 translate-y-[-50%] flex flex-col items-end -gap-0.1">
+     <div dir='ltr' className="fixed py-12  top-[80%] z-10 right-0 translate-y-[-50%] flex flex-col items-end -gap-0.1">
         {socials.map((social, index) => (
           <a
             key={index}
@@ -102,7 +101,7 @@ const SocialButtons = () => {
 
 
 {/* ----------- */}
-<div  className="lg:flex lg:flex-row flex flex-col justify-center items-baseline md:items-center space-x-12 lg:space-y-0 space-y-2">
+<div  className="lg:flex !mb-12 lg:flex-row flex flex-col justify-center items-baseline md:items-center space-x-12 lg:space-y-0 space-y-2">
 
 <div className="flex flex-row space-x-2">
     <FaMobileAlt className="w-5 h-5 text-gray-500" />
