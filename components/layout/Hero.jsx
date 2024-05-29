@@ -31,7 +31,7 @@ function Hero({data ,direction ,lang}) {
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
              
-                <a href="https://wtspee.com/905522982310" target="_blank" className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-black arabic  md:py-4 md:px-10 md:text-lg">
+                <a href="https://wtspee.com/905388500388" target="_blank" className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-black arabic  md:py-4 md:px-10 md:text-lg">
             
                   
                   {lang === 'ar' ?   "وتس اب " : lang === 'en' ? "Whatsapp"    : "Whatsapp"}
