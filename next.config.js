@@ -17,43 +17,46 @@ const nextConfig = {
     },
 
 
-    // webpack: (config, { isServer }) => {
-    //   if (!isServer) {
-    //     // don't resolve 'fs' module on the client to prevent this error on build --> Error: Can't resolve 'fs'
-    //     config.resolve.fallback = {
-    //      // fixes proxy-agent dependencies
-    //      net: false,
-    //      dns: false,
-    //      tls: false,
-    //      assert: false,
-    //      // fixes next-i18next dependencies
-    //      path: false,
-    //      fs: false,
-    //      // fixes mapbox dependencies
-    //      events: false,
-    //      // fixes sentry dependencies
-    //      async_hooks: false,
-    //     //  topLevelAwait: true,
-    //     //  layers: true,
-    //     };
-    //   }
-  
-    //   return config;
-    // },
-
-
-
     webpack: (config, { isServer }) => {
       if (!isServer) {
-        config.resolve.fallback.fs = false
-        config.resolve.fallback.tls = false
-        config.resolve.fallback.net = false
-        config.resolve.fallback.child_process = false
-        config.resolve.fallback.worker_threads = false
+        // don't resolve 'fs' module on the client to prevent this error on build --> Error: Can't resolve 'fs'
+        config.resolve.fallback = {
+         // fixes proxy-agent dependencies
+         net: false,
+         dns: false,
+         tls: false,
+         assert: false,
+       
+         child_process :false ,
+         worker_threads : false ,
+         // fixes next-i18next dependencies
+         path: false,
+         fs: false,
+         // fixes mapbox dependencies
+         events: false,
+         // fixes sentry dependencies
+         async_hooks: false,
+        //  topLevelAwait: true,
+        //  layers: true,
+        };
       }
   
-      return config
-    },      
+      return config;
+    },
+
+
+
+    // webpack: (config, { isServer }) => {
+    //   if (!isServer) {
+    //     config.resolve.fallback.fs = false
+    //     config.resolve.fallback.tls = false
+    //     config.resolve.fallback.net = false
+    //     config.resolve.fallback.child_process = false
+    //     config.resolve.fallback.worker_threads = false
+    //   }
+  
+    //   return config
+    // },      
   
 
 

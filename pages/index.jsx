@@ -167,6 +167,26 @@ export default function Index({}) {
 
 
 
+{/* -------Kalipler--- */}
+
+<div className="py-16 sm:py-28">
+            <div>
+              <h1 className="shimmer  arabic flex justify-center flex-col text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl text-center mb-12">
+                {kalipTitle}
+              </h1>
+            </div>
+
+            <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+              {makines?.map((product, index) => {
+                return <ProductCard {...product} key={product?.id} />;
+              })}
+            </div>
+          </div>
+
+
+
+
+
 
 
           {/* -----ALL PRODUCTS CONTAINER------ */}
