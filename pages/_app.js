@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import  ProgressBar from '../components/common/progressBar';
 import { useEffect } from 'react';
-
+import Head from 'next/head';
 
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,7 +18,7 @@ import store from '@/redux/store';
 
 import { appWithTranslation } from "next-i18next";
 import nextI18NextConfig from "../next-i18next.config"
-
+import OpenGraphTags from '@/opengraphTags';
 
 
 const MyApp=({ Component, pageProps }) =>{
@@ -40,6 +40,17 @@ const MyApp=({ Component, pageProps }) =>{
 
     return (
         <>
+
+<Head>
+        {/* <meta charSet="utf-8" />
+        <meta name="description" content="MIRI MOLDS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" /> */}
+        <OpenGraphTags />
+        <title>SWEETSIPS</title>
+      </Head>
+
+
     <ChakraProvider>
     <Provider store={store}>
     <StateContextProvider>
