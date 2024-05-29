@@ -32,16 +32,16 @@ export default function Index({}) {
 
   const newproductstitle =
     router.locale === "ar"
-      ? "احدث المنتجات"
+      ? "الماكينات"
       : router.locale === "en"
-      ? "Products"
-      : "ürünler";
-  const discounttitle =
+      ? "Machines"
+      : "Makineler";
+  const kalipTitle =
     router.locale === "ar"
-      ? "التخفيضات"
+      ? "القوالب"
       : router.locale === "en"
-      ? "Offers Products"
-      : "indirimler";
+      ? "Kalipler"
+      : "Kalipler";
 
   console.log("Lodale", router.locale, router);
   //  const aboutus = t("aboutus", { returnObjects: true });
@@ -147,8 +147,32 @@ export default function Index({}) {
         </div>
 
         <div>
+
+{/* -------MAKINES--- */}
+
+<div className="py-16 sm:py-28">
+            <div>
+              <h1 className="shimmer  arabic flex justify-center flex-col text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl text-center mb-12">
+                {newproductstitle}
+              </h1>
+            </div>
+
+            <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+              {makines?.map((product, index) => {
+                return <ProductCard {...product} key={product?.id} />;
+              })}
+            </div>
+          </div>
+
+
+
+
+
+
           {/* -----ALL PRODUCTS CONTAINER------ */}
-          <div className="py-16 sm:py-28">
+
+
+          {/* <div className="py-16 sm:py-28">
             <div>
               <h1 className="shimmer  arabic flex justify-center flex-col text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl text-center mb-12">
                 {newproductstitle}
@@ -161,26 +185,15 @@ export default function Index({}) {
               })}
             </div>
           </div>
+ */}
 
-          {/* 
-        {offers && offers?.length > 0 && (
-          <ProductSlider title={discounttitle} data={offers} />
-        )}
 
-        {news && news?.length > 0 && (
-          <ProductSlider title={newproductstitle} data={news} />
-        )} */}
+
+
+
         </div>
 
-        {/* <BannerSlider/>
 
-<Service/>
-
-<SectionOne/>
-
-<Travels/>
-
-<AbourSection/> */}
       </div>
     </Layout>
   );
