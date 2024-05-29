@@ -19,8 +19,8 @@ const AdminLayout = ({ children }) => {
   
     { id: 1, text: "Add Machine", path: "/admin/makine/add" },
     { id: 2, text: "All Machines", path: "/admin/makine/all" },
-    { id: 3, text: "Add Product", path: "/admin/product/add" },
-    { id: 4, text: "All Products", path: "/admin/product/all" },
+    // { id: 3, text: "Add Product", path: "/admin/product/add" },
+    // { id: 4, text: "All Products", path: "/admin/product/all" },
     // { id: 5, text: "Add SubCategory", path: "/admin/subcategory/add" },
     // { id: 6, text: "All SubCategories", path: "/admin/subcategory/all" },
     // { id: 7, text: "Add Article", path: "/admin/article/add" },

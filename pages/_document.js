@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
     Nabhan Mobilya
             
             </title>
-          <link rel="icon" href="/logo.jpg" />
+          <link rel="icon" href="/logo.png" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
