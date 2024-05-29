@@ -13,8 +13,8 @@ export default class MyDocument extends Document {
             </title>
 
             <meta name="keywords" content=" 
-            
-            meralKalip , meral kalip  plastic meral kalip  ,   Miri ÇELİK Kalıp ,  شركة ميرال لصناعة القوالب البلاستيكية ,MiriMold , mold | miri mold ,  قوالب صب البلاستيك وقوالب تشكيل الحديد,| قوالب تشكيل الحديد   ,  قوالب صب البلاستيك ,  قوالب صب  
+            mirimolds ,miri plastik , miri plastik kalip , miri mold plastik
+            miriKalip , miri kalip  plastic miri kalip  ,   Miri ÇELİK Kalıp ,  شركة ميرال لصناعة القوالب البلاستيكية ,MiriMold , mold | miri mold ,  قوالب صب البلاستيك وقوالب تشكيل الحديد,| قوالب تشكيل الحديد   ,  قوالب صب البلاستيك ,  قوالب صب  
         
         ,  لصناعة قوالب البلاستيك والمنتجات البلاستيكية في تركيا
         , 
