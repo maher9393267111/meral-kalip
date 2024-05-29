@@ -8,9 +8,19 @@ export default class MyDocument extends Document {
         <Head>
         <title>
             
-    Nabhan Mobilya
+    Meral Kalıp
             
             </title>
+
+            <meta name="keywords" content="kalıp , meralKalip, meral kalip, plastic injection molding, plastic manufacturing, plastic parts, custom plastic components, injection molding services, plastic injection mold, plastic molding company, plastic injection molding process , متخصصون في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة, ميرال قالب ,شركة ميرال حقن بلاستيك , " />
+          
+
+            <meta name="description" content=
+            "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" />
+
+
+
+
           <link rel="icon" href="/logo.png" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
