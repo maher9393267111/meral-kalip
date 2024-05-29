@@ -56,9 +56,26 @@ export default function Index({}) {
   const [sliders, setSliders] = useState([]);
 
   const [homesection, setHomeSection] = useState({});
-
+  const [contactinfo, setContactInfo] = useState([]);
   // const [loacding, setLoading] = useState(true);
   //subcategory"
+
+
+
+  const geAbout = async () => {
+    setPageLoading(true);
+
+   const data = await getDocumentsOrder(
+     "aboutsection",
+     orderBy("timeStamp", "asc")
+   );
+
+   console.log(data, "fetch productIIUW!@__@#(@)#(s ====>>>>");
+   setContactInfo(data[0]);
+
+     setPageLoading(false);
+ };
+ getInfo();
 
 
 
