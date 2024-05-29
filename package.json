@@ -30,7 +30,7 @@
     "framer-motion": "^10.16.4",
     "html-react-parser": "^5.1.9",
     "i18next": "^22.0.6",
-    "next": "latest",
+    "next": "13.4.0",
     "next-i18next": "^13.3.0",
     "next-nprogress-bar": "^2.1.2",
     "next-seo": "^6.4.0",
@@ -63,6 +63,7 @@
     "encoding": "^0.1.13",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "jest-worker": "^29.7.0",
     "postcss": "latest",
     "tailwindcss": "latest"
   }

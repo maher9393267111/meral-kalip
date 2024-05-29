@@ -1,3 +1,6 @@
+
+
+
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
@@ -14,6 +17,7 @@ import Link from "next/link";
 import Hero from "@/components/layout/Hero";
 import ProductCard from "@/components/Main/productCard";
 import { useAuth } from "@/functions/context";
+import { getMaxAge } from "next/dist/server/image-optimizer";
 // import Service from "@/components/Main/Services";
 // import SectionOne from "@/components/Main/SectionOne";
 // import Travels from "@/components/Main/Travels";
@@ -45,6 +49,8 @@ export default function Index({}) {
 
   const [cats, setCats] = useState([]);
   const [products, setProducts] = useState([]);
+  const [makines, setMakines] = useState([]);
+  const [kalips, setKalips] = useState([]);
   const [offers, setOffers] = useState([]);
   const [news, setNews] = useState([]);
   const [sliders, setSliders] = useState([]);
@@ -53,6 +59,9 @@ export default function Index({}) {
 
   // const [loacding, setLoading] = useState(true);
   //subcategory"
+
+
+
   useEffect(() => {
     const getProducts = async () => {
       setPageLoading(true);
@@ -68,35 +77,6 @@ export default function Index({}) {
       setPageLoading(false);
     };
 
-    const getOffers = async () => {
-      //  setPageLoading(true)
-
-      const data = await getDocumentsOrder(
-        "products",
-        orderBy("timeStamp", "asc"),
-        where("isoffer", "==", true)
-      );
-
-      console.log(data, "fetch PRODUCCCCCCCCCCCC====>>>>");
-      setOffers(data);
-      // setPageLoading(false)
-    };
-
-    const getFeatures = async () => {
-      // setLoading(true);
-
-      setProducts([]);
-      const data = await getDocumentsOrder(
-        "products",
-        orderBy("timeStamp", "asc"),
-        null,
-        2
-      );
-
-      console.log(data, "fetch Propertirs 3====>>>>");
-      setNews(data);
-    };
-
     const getInfo = async () => {
       // setLoading(true);
 
@@ -110,16 +90,44 @@ export default function Index({}) {
 
       //  setLoading(false);
     };
+   
+
+    const getKalips = async () => {
+      setPageLoading(true);
+      let productsdata = [];
+
+      productsdata = await getDocumentsOrder(
+        "makines",
+        orderBy("timeStamp", "desc"),
+
+        where("category", "==", "kalip")
+      );
+
+      setKalips(productsdata);
+
+      setPageLoading(false);
+    };
+
+    const getMAkines = async () => {
+      let productsdata = [];
+
+      productsdata = await getDocumentsOrder(
+        "makines",
+        orderBy("timeStamp", "desc"),
+
+        where("category", "==", "Eccentric")
+      );
+
+      setMakines(productsdata);
+    };
+
+    
+    getKalips();
+    getMAkines();
     getInfo();
 
-    getFeatures();
-
     getProducts();
-    getOffers();
   }, []);
-
-
-
 
   return (
     <Layout dir={router.locale === "ar" ? "rtl" : "ltr"}>
@@ -135,19 +143,17 @@ export default function Index({}) {
         )} */}
 
         <div dir="ltr">
-
           <Hero lang={lang} data={homesection} direction={direction} />
         </div>
 
         <div>
           {/* -----ALL PRODUCTS CONTAINER------ */}
           <div className="py-16 sm:py-28">
-
-
-<div>
-  <h1 className="shimmer  arabic flex justify-center flex-col text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl text-center mb-12">{newproductstitle}</h1>
-</div>
-
+            <div>
+              <h1 className="shimmer  arabic flex justify-center flex-col text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl text-center mb-12">
+                {newproductstitle}
+              </h1>
+            </div>
 
             <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
               {products?.map((product, index) => {
@@ -192,35 +198,3 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-// Index.getInitialProps = async (context) => {
-//   let products = [];
-//   //navbar.jsx href={`/products?category=${item.title.toLowerCase()}`}
-//   const category = context.query.category;
-//   const subcategory = context.query.subcategory;
-//   // step 1
-//   const search = context.query.search;
-
-//   //console.log("categoryyyyy", category);
-
-//   //console.log("subcategoryyyyy", subcategory);
-
-//   //    where("fieldname", "==", fieldValue)
-
-//   products = await getDocumentsOrder(
-//     "products",
-//     orderBy("timeStamp", "desc"),
-
-//     //category i am searching for all products that have a category name / same as subcategory , else null nothing (filteration)
-//     category
-//       ? where("category", "==", category)
-//       : subcategory
-//       ? where("subcategory", "==", subcategory)
-//       : null
-//   );
-
-//   return {
-//     // props from serverside will go to props in clientside
-//     products: products,
-
-//   };
-// };
