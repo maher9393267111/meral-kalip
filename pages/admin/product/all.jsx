@@ -3,7 +3,7 @@
 import ProductsMain from "@/components/admin/product/products";
 import React ,{useState,useEffect} from "react";
 import { useMemo } from "react";
-import { useMemo } from "react";
+
 import { getDocuments , getDocumentsOrder } from "@/functions/firebase/getData";
 
 import { useAuth } from "@/functions/context";
