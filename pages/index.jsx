@@ -173,7 +173,8 @@ export default function Index({}) {
 
 
 
-     description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. mirikalip mirimolds" 
+     description=   "mirimolds ,miri plastik  miri plastik kalip  miri mold plastik miriKalip  miri kalip  plastic miri kalip     Miri ÇELİKKalıpشركة ميرال لصناعة القوالب البلاستيكية MiriMold  mold | miri mold   قوالب صب البلاستيك وقوالب تشكيل الحديد| قوالب تشكيل الحديد   قوالب صب البلاستيك   قوالب صب   لصناعة قوالب البلاستيك والمنتجات البلاستيكية في تركيا تصنيع كافة القوالب البلاستيكية الحقن +النفخ  + قوالب حقن المعادن المنتجات البلاستيكية تصنيع قوالب البلاستيك"
+          
       />
 
 
