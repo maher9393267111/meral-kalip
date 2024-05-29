@@ -8,16 +8,29 @@ export default class MyDocument extends Document {
         <Head>
         <title>
             
-    Meral Kalıp
+    Mirir Mold
             
             </title>
 
-            <meta name="keywords" content="kalıp , meralKalip, meral kalip, Meralkalip – | Meralkalip plastic,plastic injection molding, plastic manufacturing, plastic parts, custom plastic components, injection molding services, plastic injection mold, plastic molding company, plastic injection molding process  متخصصون في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة, ميرال قالب ,شركة ميرال حقن بلاستيك , " />
+            <meta name="keywords" content=" 
+            
+            meralKalip , meral kalip  plastic meral kalip  ,   Miri ÇELİK Kalıp ,  شركة ميرال لصناعة القوالب البلاستيكية ,MiriMold , mold | miri mold ,  قوالب صب البلاستيك وقوالب تشكيل الحديد,| قوالب تشكيل الحديد   ,  قوالب صب البلاستيك ,  قوالب صب  
+        
+        ,  لصناعة قوالب البلاستيك والمنتجات البلاستيكية في تركيا
+        , 
+        تصنيع كافة القوالب البلاستيكية الحقن +النفخ  + قوالب حقن المعادن 
+        , 
+        المنتجات البلاستيكية
+        , 
+        تصنيع قوالب البلاستيك
+            
+            
+            " />
           
 
             <meta name="description" content=
 
-            "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" 
+            "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. miri kalip miri mold" 
             
             />
 

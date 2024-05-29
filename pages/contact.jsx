@@ -111,6 +111,7 @@ const router =useRouter()
         
         " 
        
+        canonical="https://www.mirimolds.com"
      description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" 
       />
 
