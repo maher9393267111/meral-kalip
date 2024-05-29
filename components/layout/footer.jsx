@@ -101,23 +101,28 @@ const SocialButtons = () => {
 
 
 {/* ----------- */}
-<div  className="lg:flex !mb-12 lg:flex-row flex flex-col justify-center items-baseline md:items-center space-x-12 lg:space-y-0 space-y-2">
+<div
+className=' !text-xl font-semibold mb-12 md:mb-24 grid grid-cols-2 md:grid-cols-4 gap-12'  
+// className="lg:flex !mb-12 lg:flex-row flex flex-col justify-center items-center items-baselin md:items-center space-x-12 lg:space-y-0 space-y-2"
+
+
+>
 
 <div className="flex flex-row space-x-2">
     <FaMobileAlt className="w-5 h-5 text-gray-500" />
-    <p>+905387750388</p>
+    <p  className='shimmer'>+905387750388</p>
   </div>
 
   <div className="flex flex-row space-x-2">
     <FaMobileAlt className="w-5 h-5 text-gray-500" />
-    <p>+095387752388</p>
+    <p  className='shimmer'>+095387752388</p>
   </div>
 
   <div className="flex flex-row space-x-2">
     <MdEmail className="w-5 h-5 text-gray-500" />
     <p>
       {/* info@meralkalip.com */}
-      <a target="_blank" href="mailto:Meralkalip@gmail.com">
+      <a  className='shimmer' target="_blank" href="mailto:Meralkalip@gmail.com">
         Meralkalip@gmail.com
       </a>
     </p>
@@ -129,7 +134,7 @@ const SocialButtons = () => {
   <a  target="_blank" href="https://youtube.com/@meralkalip5296?si=9LQHjhz2K70saVyP">
     <img src="/yotube.svg" className="w-5 h-5 arabic text-gray-500" />
     </a>
-    <p className="arabic"> Yotube</p>
+    <p className="arabic shimmer"> Yotube</p>
   </div> 
 
   {/*  */}
