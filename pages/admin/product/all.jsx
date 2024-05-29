@@ -17,7 +17,7 @@ const AllProductsPage = ({}) => {
     const getArticles = async () => {
       // setLoading(true);
       setPageLoading(true);
-      setProducts([]);
+      
       const data = await getDocumentsOrder(
         "products",
         orderBy("timeStamp", "asc")

@@ -75,7 +75,7 @@ export default function Index({}) {
 
      setPageLoading(false);
  };
- getInfo();
+
 
 
 
@@ -144,6 +144,7 @@ export default function Index({}) {
     getInfo();
 
     getProducts();
+    geAbout();
   }, []);
 
   return (
