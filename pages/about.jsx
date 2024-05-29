@@ -37,7 +37,14 @@ function Hakkimizda() {
   return (
     <Layout>
       <>
-        <NextSeo title="Nabhan | Hakkımızda | Nabhan Mobilya" />
+      <NextSeo
+        title="meralKalip | meral kalip | plastic meral kalip | شركة ميرال لصناعة القوالب البلاستيكية"
+       
+     description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" 
+      />
+
+
+
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-5 py-8 md:grid-cols-2 md:py-16">
             <section className="grid gap-4 arabic">

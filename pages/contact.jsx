@@ -96,9 +96,10 @@ const router =useRouter()
 
     
     <>
-      <NextSeo
-        title="Nabhan | Nabhan Furniture | Nabhan Mobilya"
-        description="Tedili Mermer"
+    <NextSeo
+        title="meralKalip | meral kalip | plastic meral kalip | شركة ميرال لصناعة القوالب البلاستيكية"
+       
+     description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" 
       />
       <div className="mx-auto arabic max-w-7xl px-6 py-8  sm:px-6 md:py-16 lg:px-8">
         <section dir={router?.locale === 'ar' && 'rtl'}>

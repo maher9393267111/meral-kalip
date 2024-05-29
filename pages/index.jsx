@@ -21,6 +21,7 @@ import { getMaxAge } from "next/dist/server/image-optimizer";
  import Image from "next/image";
 import { Image as antdImage } from "antd";
 
+
 export default function Index({}) {
   const router = useRouter();
   const { t } = useTranslation("common");
@@ -147,7 +148,12 @@ export default function Index({}) {
 
   return (
     <Layout dir={router.locale === "ar" ? "rtl" : "ltr"}>
-      <NextSeo title="Nabhan | Nabhan Furniture | Nabhan Mobilya" />
+      
+      <NextSeo
+        title="meralKalip | meral kalip | plastic meral kalip | شركة ميرال لصناعة القوالب البلاستيكية"
+       
+     description=   "نحن شركة رائدة في مجال تصنيع قوالب حقن البلاستيك وتشكيل الصاج التركية عالية الجودة. اتصل بنا  لجميع احتياجاتك من قوالب البلاستيك. meral kalip" 
+      />
 
       <div className="scroll-smooth mb-16  ">
         {/* {sliders && sliders?.length > 0 && <BannerSlider data={sliders} />}
