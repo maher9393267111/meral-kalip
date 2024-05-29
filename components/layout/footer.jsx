@@ -17,7 +17,12 @@ const SocialButtons = () => {
       icon: <FaWhatsapp />,
       link: 'https://wtspee.com/905388500388',
     },
-
+    {
+    name: 'Whatsapp2',
+    icon: <FaWhatsapp />,
+    link: 'https://wtspee.com/905387750388',
+  },
+    
     {
       name: 'Facebook',
       icon: <FaFacebookF />,
@@ -30,6 +35,11 @@ const SocialButtons = () => {
       link: 'mailto:Meralkalip@gmail.com',
     },
 
+    // {
+    //   name: 'yotube',
+    //   icon: <MdEmail />,
+    //   link: 'mailto:Meralkalip@gmail.com',
+    // },
     
 
 
@@ -66,7 +76,7 @@ const SocialButtons = () => {
               childNode && childNode.classList.add('hidden');
             }}
           >
-            {social.icon}
+            { social?.name !== 'yotube' ? social.icon  : <img src="/yotube.svg" alt="" />}
             <span className="text-xs font-poly font-bold hidden">
               {social.name}
             </span>

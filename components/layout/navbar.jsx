@@ -135,12 +135,12 @@ const Navbar = () => {
 
       <div className="container mx-auto lg:flex lg:flex-row  lg:justify-between justify-center items-center space-y-2  text-gray-500 py-3 w-full">
         <div className="lg:flex lg:flex-row flex flex-col justify-center items-baseline md:items-center space-x-12 lg:space-y-0 space-y-2">
-          <div className="flex flex-row space-x-2">
-            <FaMapMarkerAlt className="w-5 h-5 text-gray-500" />
-            <p className="arabic">
-              Maltepe Mah Gümüşsuyu Cd HACALOĞLU SANAYI SITESI
-            </p>
+
+        <div className="flex flex-row space-x-2">
+            <FaMobileAlt className="w-5 h-5 text-gray-500" />
+            <p>+905387750388</p>
           </div>
+
           <div className="flex flex-row space-x-2">
             <FaMobileAlt className="w-5 h-5 text-gray-500" />
             <p>+095387752388</p>
@@ -156,12 +156,24 @@ const Navbar = () => {
             </p>
           </div>
 
+
+
+         <div className="flex flex-row space-x-2">
+          <a  target="_blank" href="https://youtube.com/@meralkalip5296?si=9LQHjhz2K70saVyP">
+            <img src="/yotube.svg" className="w-5 h-5 arabic text-gray-500" />
+            </a>
+            <p className="arabic"> Yotube</p>
+          </div> 
+
           {/*  */}
 
-          <div className="flex flex-row space-x-2">
+          {/* <div className="flex flex-row space-x-2">
             <FaRegClock className="w-5 h-5 arabic text-gray-500" />
             <p className="arabic"> Pazartesi-Cumartesi 08:00 - 6:00</p>
-          </div>
+          </div> */}
+
+
+
         </div>
         <div className="flex flex-row space-x-4  justify-center items-center ">
           {/* <a
