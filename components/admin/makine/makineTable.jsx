@@ -39,6 +39,14 @@ const MakineTable = ({ products }) => {
 
     },
 
+    {
+      title: "Category",
+      // same name from database   // category={title ,....}
+      dataIndex: "category",
+
+
+    },
+
 
 
     {
