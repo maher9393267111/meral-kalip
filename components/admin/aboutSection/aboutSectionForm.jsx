@@ -57,15 +57,15 @@ const AboutSectionForm = ({
             image: initialValues?.image || "",
           }}
         >
-          <Form.Item name="title" label="English Sub Category Title ">
+          <Form.Item name="title" label="English Title ">
             <Input />
           </Form.Item>
 
-          <Form.Item name="titlear" label="Arabic Sub Category Title ">
+          <Form.Item name="titlear" label="Arabic Title ">
             <Input />
           </Form.Item>
 
-          <Form.Item name="titletr" label="Turkish Sub Category Title ">
+          <Form.Item name="titletr" label="Turkish Title ">
             <Input />
           </Form.Item>
 
